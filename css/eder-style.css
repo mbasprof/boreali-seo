@@ -1,0 +1,535 @@
+body {
+    margin: 0 auto;
+    background: url("../images/background.jpg") no-repeat center top;
+    background-color: #e7e8ea;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+#wrap{
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+
+}
+
+header{
+    padding-top: 50px;
+    height: 110px;
+}
+
+header > div {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.social_media ul li {
+    padding: 10px;
+}
+
+#banner{
+    /*position: relative;*/
+    padding-left: 73px;
+    /*top: 60%;*/
+    height: 473px;
+    margin-top: 100px;
+
+}
+
+#slider{
+    width: 100%;
+    height: 408px;
+    display: inline-block;
+
+}
+
+.main{
+    /*margin-top: 55px;
+    margin-bottom:60px;*/
+}
+
+#categories {
+
+    height: 307px;
+    /*position: relative;*/
+    width: 100%;
+    margin-top: 30px;
+}
+#for-content{
+    margin-top: 50px;
+
+}
+.forfait{
+    float: left;
+}
+.forfait2{
+    margin-left: 21px;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    float: left;
+}
+
+
+/*#rabais_img{
+    width:568px;
+    height: 408px;
+    float: left;
+    background-color: yellow;
+}
+#rabais-contenu{
+
+    padding: 30px 30px 0 60px ;
+    width: 302px;
+    float: right;
+    height: 202px;
+    background: url("../images/rabais.jpg") repeat-x left top;
+
+}
+#rabais-prix{
+    background-color: #d87000;
+    padding: 10px 30px 0 60px ;
+    width: 302px;
+    height: 166px;
+    float: right;
+}
+.prix{
+    font-family: "Bebas Neue";
+    font-size: 50pt;
+    color: white;
+    line-height: 10%;
+
+}*/
+.logo{
+    /*margin-left: 300px;*/
+    /*float: left;*/
+}
+.menu{
+    /*float: right;*/
+    text-align: right;
+}
+.menu ul {
+    width: 100%;
+    /*float: right;*/
+}
+.menu ul li {
+
+    padding: 20px 50px 20px 0px;
+}
+
+#for-categorie{
+
+}
+
+.forfait_categorie{
+    height: 535px;
+    background-color: #d87000;
+    float: left;
+
+}
+.forfait_categorie2{
+    height: 535px;
+    background-color: #d87000;
+    float: right;
+
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30pt;
+    line-height: 40%;
+}
+
+header h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18pt;
+    line-height: 30%;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18pt;
+}
+h4{
+    font-family: "Arial";
+    font-size: 12pt;
+    line-height: 10%;
+
+}
+a{
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+}
+
+div ul  {
+    /*display: inline;*/
+
+}
+
+/************** light BOX ******************/
+
+#modal{
+    background:transparent;
+}
+
+#box{
+    height: 633px;
+    width: 960px;
+    background-color: #d87000;
+    display: inline-block;
+
+}
+
+#box-img{
+    width: 722px;
+    height: 395px;
+    background-color: blue;
+    float: left;
+}
+#box-info{
+    width: 722px;
+    height: 238px;
+    background-color: green;
+    float: left;
+
+}
+#box-prix-reserve{
+    width: 238px;
+    height: 633px;
+    background-color: yellow;
+    float: right;
+}
+
+
+/***************** Modal ***********************/
+
+#wrap-modal{
+    width: 960px;
+    height: auto;
+    background-color: white;
+}
+
+#wrap-modal-photo{
+    height: 396px;
+    background-color: antiquewhite;
+}
+#wrap-modal-info{
+
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-modal-info-detail{
+    width: 75%;
+    float: left;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#wrap-modal-info-detail-01,#wrap-modal-info-detail-02 {
+    width: 25%;
+    display: inline-block;
+    padding: 10px 25px 40px 25px ;
+}
+
+#wrap-modal-info-prix{
+    float: right;
+    display: inline-block;
+    width: 25%;
+    height: 309px;
+    background-color: #33587e;
+}
+
+#wrap-modal-info-prix-b_saison{
+    width: 79%;
+    height: 144px;
+    background-color: #33587e;
+    padding: 40px 25px 25px 25px ;
+}
+#wrap-modal-info-prix-reserver{
+    width: 79%;
+    height: 35px;
+    background-color: #d87000;
+    padding: 40px 25px 25px 25px ;
+}
+
+
+/************** Footer  ******************/
+
+footer{
+    clear: both;
+    height: 90px;
+    background-image: url(../images/footer.jpg);
+}
+
+
+/***************** FORM ***************/
+
+form{
+    width:100%;
+    margin-bottom: 50px;
+}
+fieldset{
+    border:3px solid #d87000;
+    margin-bottom: 20px;
+
+}
+legend{
+    padding: 10px 30px;
+}
+
+label, input, textarea, select{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    padding: 2px;
+    box-sizing: border-box;
+
+}
+label{
+    width: 20%;
+
+}
+input[type="text"], input[type="tel"],input[type="email"], select{
+    height:40px;
+    width:70%;
+}
+input[type="date"], input[type="number"]{
+    height:40px;
+}
+input[type="number"]{
+    width: 50px;
+}
+.right{
+    text-align: right;
+}
+
+textarea{
+    width:70%;
+}
+#body{
+    height:auto;
+}
+input[type="submit"]{
+    text-align: center;
+    width:30%;
+    height:40px;
+    display: block;
+    margin:30px auto;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+thead tr, tfoot tr, tbody tr{
+    height:40px;
+    padding: 5px;
+}
+thead tr, tfoot tr{
+    font-weight: bold;
+}
+thead th{
+    background-color: rgba(216, 112, 0, 0.2);
+    text-align: left;
+    padding: 5px;
+}
+tfoot td{
+    background-color: rgba(216, 112, 0, 0.1);
+}
+
+thead td, tfoot td, tbody td {
+    padding: 5px;
+}
+#prix_total{
+    text-align: right;
+    padding-right: 20px;
+    background-color: rgba(216, 112, 0, 0.1);
+}
+
+p.msg_erreur{
+    display: none;
+    color:red;
+    margin-left:20%;
+    padding-left: 5px;
+}
+
+/************** light BOX video ******************/
+
+.video-background{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .0;
+    -moz-opacity: .0;
+    filter: alpha(opacity=0);
+    z-index:100;
+    display:none;
+}
+
+.video-box{
+    position: absolute;
+    top:20%;
+    /*left:30%;*/
+    width: 960px;
+    z-index:101;
+    padding: 14px;
+    display: none;
+
+}
+
+.video-close-lightbox{
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #d87000;
+}
+
+.video-close-lightbox h4{
+    float: left;
+    line-height:5px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #d87000;
+}
+
+.video-conteudo{
+    width: 960px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: blue;
+    background-image: url("../images/video-img.png");
+
+}
+
+.video-play{
+    padding-top: 10%;
+    float: left;
+}
+.video-conteudo p{
+    padding: 100px 20px 100px 180px;
+    float: left;
+    color: white;
+}
+
+/*******************  slider *********************/
+.fadeslider{
+    width: 400px;
+    height: 200px;
+    /*float: left;*/
+    position: relative;
+    text-align:center;
+}
+.fadeslider .slide{
+    position: absolute;
+    top:0;
+    display:none;
+}
+.fadeslider .slide:nth-child(1){
+    display:block;
+}
+.fadeslider .slide .text{
+    position: absolute;
+    top:0;
+    width: 100%;
+    line-height:200px;
+    color:#fff;
+    background:rgba(0,0,0,0.3);
+    font-size:18px;
+}
+.slideback{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    background:rgba(0,0,0,0.6);
+    color:#fff;
+    top:190px;
+    left:0;
+    line-height:40px;
+    cursor:pointer;
+}
+.slideback:hover,.slidenext:hover{
+    background:rgba(0,0,0,1);
+}
+.slidenext{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    top:190px;
+    right:0;
+    line-height:40px;
+    cursor:pointer;
+}
+.slidelist{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+}
+.slidelist div{
+    width: 7.5px;
+    height: 7.5px;
+    background: orange;
+    float: left;
+    margin-right:10px;
+    transition:300ms;
+    border:1.25px solid orange;
+}
+.slidelist div.active{
+    width: 7.5px;
+    height: 7.5px;
+    border:1.25px solid orange;
+}
+
+.slidelist div.active{
+    background: #505050;
+}
+
+.rabais_img,#rabais_img2{
+    width:568px;
+    height: 408px;
+    float: left;
+}
+.rabais-contenu,#rabais-contenu2{
+
+    padding: 30px 30px 0 30px ;
+    width: 332px;
+    float: right;
+    height: 202px;
+    background-color: white;
+
+
+}
+.rabais-prix,#rabais-prix2{
+    background-color: #d87000;
+    padding: 10px 30px 0 30px ;
+    width: 332px;
+    height: 166px;
+    float: right;
+}
+.prix{
+    /*font-family: "Bebas Neue";*/
+    font-size: 50pt;
+    color: white;
+    line-height: 10%;
+
+}
+
+/************** LINKS **************/
+
+.for-img a, .for-info a{
+    color: Orange;
+    text-align: left;
+}

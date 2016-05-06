@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de réservation de Boreale Agence de Voyages</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    .display{
+        display:block!important;
+    }
+    .invalid{
+        border:2px solid red;
+    }
+
+  fieldset:nth-of-type(2) > label:last-of-type {
+      display: inline-block;
+  }
+
+        legend{
+
+            font-size : 18pt;
+            color: #d87000;
+        }
+
+#details_recapitulatif {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+    #details_recapitulatif ul{
+        list-style-type: disc;
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="wrap">
+    <!-- *********** HEADER ************ -->
+    <header>
+        <div class="social_media">
+            <ul>
+                <li><img src="images/fb-icon.png" alt = "Suivez-nous sur facebook" /></li>
+                <li><img src="images/youtube-icon.png" alt = "Suivez-nous sur youtube" /></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="images/logo-boreale.png" alt = "Suivez-nous sur facebook" />
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Forfaits</a></li>
+                <li><a href="reserver.html">Réserver</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- *********** BANNER ************ -->
+
+    <div id="banner">
+        <img src="images/banner-sport_hiver.png" alt="Voyage sur la neige" />
+    </div>
+
+    <!-- START BODY -->
+
+    <div class="main" id="main_reserver">
+
+        <!-- *********** PAS DE SLIDER ***********-->
+
+    <h1>Formulaire de réservation</h1>
+        <!-- *********** FORM ************ -->
+
+       <form action="" method="get" name="form_resa" id="form_resa" novalidate="novalidate">
+
+
+
+           <!-- INFOS CLIENT-->
+           <fieldset>
+               <legend>Vos coordonnées</legend>
+               <p class="msg_erreur" id="erreur_nom">Veuillez saisir votre nom.</p>
+               <label for="nom">Nom</label>
+               <input type="text" id="nom" name="nom" value="">
+               <p class="msg_erreur"  id="erreur_prenom">Veuillez saisir votre prénom.</p>
+               <label for="prenom">Prénom</label>
+               <input type="text" id="prenom" name="prenom" value="">
+               <p class="msg_erreur" id="erreur_email">Veuillez saisir un courriel valide.</p>
+               <label for="email">Courriel</label>
+               <input type="email" id="email" name="email" value="">
+               <p class="msg_erreur"  id="erreur_tel">Veuillez saisir votre numéro de téléphone au format : (555)555-5555.</p>
+               <label for="tel">Téléphone</label>
+               <input type="tel" id="tel" name="tel" value="" placeholder ="(555)555-5555">
+               <p class="msg_erreur" id="erreur_adresse">Veuillez saisir votre adresse.</p>
+               <label for="adresse">Adresse</label>
+               <textarea id="adresse" name="adresse" rows="10"></textarea>
+           </fieldset><!-- end INFOS CLIENT-->
+
+           <!-- INFOS FORFAIT-->
+           <fieldset>
+               <legend>Votre forfait</legend>
+               <p class="msg_erreur" id="erreur_choix_forfait">Veuillez sélectionner un forfait.</p>
+               <label for="choix_forfait">Sélectionner votre forfait :</label>
+               <select id="choix_forfait" name="choix_forfait">
+                   <optgroup label="Croisière">
+                       <option value="0">L'atlantique emblématique</option>
+                       <option value="1">Capitales scandinaves</option>
+                       <option value="2">Du Groenland au St Laurent</option>
+                       <option value="3">Croisière des ours blancs</option>
+                   </optgroup>
+                   <optgroup label="Sports d'hiver">
+                       <option value="4">Motoneige (Charlevoix, Québec)</option>
+                       <option value="5">Sommets du St Laurent en ski</option>
+                       <option value="6">Ski de fond raquette à Tremblant</option>
+                       <option value="7">Via ferrata des glaces</option>
+                   </optgroup>
+                   <optgroup label="Aventure">
+                       <option value="8">Trekking du grand nord en hydravion</option>
+                       <option value="9">Chiens et gîtes du grand nord</option>
+                       <option value="10">Au sommet de l'Everest (8850 m.)</option>
+                       <option value="11">Sermilik, la route des icebergs</option>
+                   </optgroup>
+               </select>
+
+               <p class="msg_erreur" id="erreur_date">Veuillez sélectionner une date de départ.</p>
+               <p class="msg_erreur" id="erreur_participants">Veuillez sélectionner le nombre de participants.</p>
+               <p class="msg_erreur">Veuillez sélectionner le nombre d'animaux.</p>
+
+               <div id="calendrier">
+                    <label for="date_commande">Date de départ :</label>
+                    <input type="text" id="date_commande" name="date" value="">
+               </div>
+               <label for="nb_participants" class="right">Participants :</label>
+               <input type="number" id="nb_participants" name="nb_participants" value="1" min="1">
+
+                <label for="nb_animaux" class="right">Animaux :</label>
+                <input type="number" id="nb_animaux" name="nb_animaux" value="0" min="0" max="2">
+
+           </fieldset><!-- end INFOS FORFAIT-->
+
+           <!-- TABLEAU RÉCAPITULATIF-->
+           <div id="overlay">
+               <div id="rideau"></div>
+           </div>
+           <fieldset id = "recapitulatif">
+               <div class="buttons">
+                   <a href="" class="ok">ok</a>
+                   <a href="" class="cancel">X</a>
+               </div>
+               <legend>Récapitulatif de votre réservation</legend>
+               <div id="details_recapitulatif">
+                   <h4>Détails de votre forfait :</h4>
+                   <ul>
+                       <li>Début du séjour : <span id="date_debut"></span></li>
+                       <li>Fin du séjour : <span id="date_fin"></span></li>
+                       <li>Durée du séjour : <span id="duree"></span> </li>
+                       <li>Options et coût du séjour :</li>
+                   </ul>
+               </div>
+               <table>
+                   <thead>
+                       <tr>
+                            <th>Options</th>
+                            <th>Quantité</th>
+                            <th>Prix</th>
+                       </tr>
+                   </thead>
+                   <tfoot>
+                       <tr>
+                            <td></td>
+                            <td id="prix_total">Prix total :</td>
+                            <td>0</td>
+                       </tr>
+                   </tfoot>
+                   <tbody>
+                       <tr>
+                           <td></td>
+                           <td>0</td>
+                           <td>0</td>
+                       </tr>
+                       <tr>
+                           <td>Supplément animaux de compagnie :</td>
+                           <td>0</td>
+                           <td>0</td>
+                       </tr>
+                   </tbody>
+
+
+               </table>
+
+
+           </fieldset><!-- end TABLEAU RÉCAPITULATIF -->
+
+           <a href="#"><input id="btn_submit" type="submit" value="Réserver"></a>
+
+       </form><!-- END form -->
+        </div><!-- END body -->
+    </div><!-- END wrap -->
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/jquery.ui.datepicker-fr.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/form.js"></script>
+    <script src="script/reserv_modal.js"></script>
+
+</body>
+</html>
